@@ -1,0 +1,9 @@
+set  term  jpeg
+set  title  "v(x)  -  metoda  RK2 "
+
+set  out  "RKt_v_x.jpeg"
+set  xlabel  'v'
+set  ylabel  'x'
+plot  "RK2-2.data"  u  1:2  w  l  lw  3  t  'TOL = 10^-2s', "RK2-5.data"  u  1:2  w  l  lw  3  t  'TOL = 10^-5s'
+
+

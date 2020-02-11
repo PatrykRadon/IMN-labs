@@ -1,0 +1,7 @@
+set term jpeg
+set title "omega  = 1.0*omega0"
+
+set out "RLC100a.jpeg"
+
+plot "RLC100.000000.data" u 3:2 w l lw 3 t 'I(t)'
+

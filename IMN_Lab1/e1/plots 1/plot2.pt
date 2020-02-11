@@ -1,0 +1,10 @@
+set term jpeg
+set title "metoda  RK2"
+
+set out "RK2.jpeg"
+
+plot "RK20.010000.data" u 3:1 w l lw 3 t 'RK2, dt = 0.01',\
+"RK20.100000.data" u 3:1 w l lw 3 t 'RK2, dt = 0.1',\
+"RK21.000000.data" u 3:1 w l lw 3 t 'RK2, dt = 1.0',\
+"origin1.data" u 2:1 w l lw 2 t 'analityczny przebieg'
+
